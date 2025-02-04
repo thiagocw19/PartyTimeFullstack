@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/67a0be847cac126fa193a361
+
+###
+DELETE http://localhost:3000/api/services/67a0be847cac126fa193a361
+
+###
+PUT http://localhost:3000/api/services/67a0be847cac126fa193a361
+Content-Type: application/json
+
+{
+    "name": "algum serviço",
+    "description": "alguma descrição",
+    "price": 400,
+    "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Thiago",
+    "description": "Uma festa",
+    "budget": 5000,
+    "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0",
+    "services": [
+        {
+            "name": "algum serviço 1",
+            "description": "alguma descrição",
+            "price": 400,
+            "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0"
+        },
+        {
+            "name": "algum serviço 2",
+            "description": "alguma descrição",
+            "price": 400,
+            "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/67a1fa5c038601acbdd1bb45
+
+###
+DELETE http://localhost:3000/api/parties/67a1fa5c038601acbdd1bb45
+
+###
+PUT http://localhost:3000/api/parties/67a1fa76038601acbdd1bb49
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Thiago",
+    "description": "Uma festa",
+    "budget": 5000,
+    "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0",
+    "services": [
+        {
+            "name": "algum serviço 1",
+            "description": "alguma descrição",
+            "price": 400,
+            "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0"
+        },
+        {
+            "name": "algum serviço 2",
+            "description": "alguma descrição",
+            "price": 400,
+            "image": "https://th.bing.com/th/id/R.5f35a123d28843b3fd458f5d56a62850?rik=8E5WzeOGFkp9HQ&pid=ImgRaw&r=0"
+        }
+    ]
+}
