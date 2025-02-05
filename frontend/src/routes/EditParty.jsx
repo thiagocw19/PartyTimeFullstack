@@ -83,7 +83,7 @@ const EditParty = () => {
       <p>Ajuste as informações da sua festa</p>
       <form onSubmit={(e) => updateParty(e)}>
         <label>
-          <span>Nome da festa:</span>
+          <span>Nome do Evento:</span>
           <input
             type="text"
             placeholder="Seja criativo..."
@@ -93,10 +93,10 @@ const EditParty = () => {
           />
         </label>
         <label>
-          <span>Anfitrião:</span>
+          <span>Dono:</span>
           <input
             type="text"
-            placeholder="Quem está dando a festa?"
+            placeholder="Quem está dando o evento?"
             onChange={(e) => setParty({ ...party, author: e.target.value })}
             value={party.author}
             required
@@ -105,7 +105,7 @@ const EditParty = () => {
         <label>
           <span>Descrição:</span>
           <textarea
-            placeholder="Conte mais sobre a festa..."
+            placeholder="Conte mais sobre o evento..."
             onChange={(e) =>
               setParty({ ...party, description: e.target.value })
             }
@@ -160,7 +160,7 @@ const EditParty = () => {
               ))}
           </div>
         </div>
-        <input type="submit" value="Editar Festa" className="btn" />
+        <input type="submit" value="Editar Evento" className="btn" />
       </form>
     </div>
   );

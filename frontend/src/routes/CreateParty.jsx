@@ -77,11 +77,11 @@ const CreateParty = () => {
 
   return (
     <div className="form-page">
-      <h2>Crie sua próxima Festa</h2>
+      <h2>Crie seu próximo evento</h2>
       <p>Defina o seu orçamento e escolha os serviços</p>
       <form onSubmit={(e) => createParty(e)}>
         <label>
-          <span>Nome da festa:</span>
+          <span>Nome do evento:</span>
           <input
             type="text"
             placeholder="Seja criativo..."
@@ -91,10 +91,10 @@ const CreateParty = () => {
           />
         </label>
         <label>
-          <span>Anfitrião:</span>
+          <span>dono:</span>
           <input
             type="text"
-            placeholder="Quem está dando a festa?"
+            placeholder="Quem está dando o evento?"
             onChange={(e) => setAuthor(e.target.value)}
             value={author}
             required
@@ -103,7 +103,7 @@ const CreateParty = () => {
         <label>
           <span>Descrição:</span>
           <textarea
-            placeholder="Conte mais sobre a festa..."
+            placeholder="Conte mais sobre o evento..."
             onChange={(e) => setDescription(e.target.value)}
             value={description}
             required
@@ -151,7 +151,7 @@ const CreateParty = () => {
               ))}
           </div>
         </div>
-        <input type="submit" value="Criar Festa" className="btn" />
+        <input type="submit" value="Criar Evento" className="btn" />
       </form>
     </div>
   );

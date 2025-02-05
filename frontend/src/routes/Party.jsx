@@ -41,7 +41,7 @@ const Party = () => {
       {!party && <p>Carregando...</p>}
       {party && (
         <div className="party">
-          <h1>{party.title}</h1>
+          <h1>Editando o evento: {party.title}</h1>
           <div className="actions-container">
             <Link to={`/party/edit/${party._id}`} className="btn">
               Editar

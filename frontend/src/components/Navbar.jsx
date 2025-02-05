@@ -4,14 +4,14 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav id="navbar">
-      <h2>Party Time</h2>
+      <h2>Event Organizer</h2>
       <ul>
         <li>
-          <NavLink to={"/"}>Minhas Festas</NavLink>
+          <NavLink to={"/"}>Meus Eventos</NavLink>
         </li>
         <li>
           <NavLink to={"/party/new"} className="btn">
-            Criar Festa
+            Criar Evento
           </NavLink>
         </li>
       </ul>
